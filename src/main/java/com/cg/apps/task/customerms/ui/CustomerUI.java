@@ -20,7 +20,7 @@ public class CustomerUI {
 		Customer rohan = service.createCustomer("Rohan");
 		display(rohan);
 
-		Customer findCustomer = service.findById(4L);
+		Customer findCustomer = service.findById(6L);
 		display(findCustomer);
 
 		Long suriyaId = suriya.getId();
@@ -32,8 +32,8 @@ public class CustomerUI {
 	void display(Customer customer) {
 		Account account = customer.getAccount();
 		System.out.println("Customer Id is " + customer.getId() + "\nCustomer Name is " + customer.getName()
-				+ " \n Customer Account Id  is " + account.getAccountID() + "\n Account Balance is " + account.getBalance()
-				+ " \n Time Of Creation is" + account.getCreated());
+				+ " \n Customer Account Id  is " + account.getAccountID() + "\n Account Balance is "
+				+ account.getBalance() + " \n Time Of Creation is" + account.getCreated());
 	}
 
 }

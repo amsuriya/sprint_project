@@ -7,26 +7,24 @@ import com.cg.apps.task.items.service.*;
 
 @Component
 public class ItemUI {
-	
+
 	@Autowired
 	IItemService service;
-	
+
 	public void start() {
-		
-		Item item1= service.create(150.0,"rice" );
+
+		Item item1 = service.create(150.0, "rice");
 		display(item1);
-		
-		Item item2= service.create(80.0,"sugar" );
+
+		Item item2 = service.create(80.0, "sugar");
 		display(item2);
-		
-		
-	
-		
+
 	}
-	
+
 	void display(Item item) {
-		System.out.println("Item id is "+item.getId()+"\n Price if item is  "+item.getPrice()+"\n Name of item is  "+item.getDescription());
-		
+		System.out.println("Item id is " + item.getId() + "\n Price if item is  " + item.getPrice()
+				+ "\n Name of item is  " + item.getDescription());
+
 	}
-	
+
 }
